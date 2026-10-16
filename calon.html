@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07183c">
+<meta name="description" content="Direktori dan profil calon Parti MANDAT Belia Kelantan untuk Parlimen Belia Malaysia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Profil Calon | MANDAT Kelantan">
+<meta property="og:description" content="Kenali 14 calon MANDAT Kelantan. Foto dan biodata akan dipaparkan selepas disahkan.">
+<link rel="icon" type="image/svg+xml" href="mandat-logo-hd.svg?v=3">
+<title>Direktori Calon | MANDAT Kelantan</title>
+<style>
+:root{--navy:#061538;--navy2:#0b2450;--gold:#ffce28;--ink:#102347;--muted:#61718d;--line:#e0e7f0;--bg:#f4f7fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}a{color:inherit}button,input{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;padding:0 clamp(20px,4vw,48px);margin:auto}
+:focus-visible{outline:3px solid #e3a900;outline-offset:4px}.skip{position:absolute;top:-90px;left:12px;z-index:30;padding:12px;background:var(--gold);color:var(--navy)}.skip:focus{top:12px}
+.notice{background:var(--gold);color:var(--navy);font-size:.68rem;font-weight:850;letter-spacing:.1em}.notice .wrap{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:12px}.notice a{text-decoration:none;letter-spacing:0}
+header{position:sticky;top:0;z-index:20;background:#07183bf5;color:white;border-bottom:1px solid #ffffff18;backdrop-filter:blur(14px)}
+.header{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:850;line-height:1.2}.brand img{height:60px;width:60px;object-fit:contain}.brand span{font-size:1.04rem}.brand small{display:block;color:#ffda66;font-size:.62rem;letter-spacing:.15em;margin-top:5px}
+nav{display:flex;align-items:center;gap:25px}nav a{text-decoration:none;color:#dce8fa;font-weight:680;font-size:.86rem}nav a:hover,nav a[aria-current]{color:var(--gold)}.nav-cta{border:1px solid #ffce2888;border-radius:999px;padding:10px 16px;color:var(--gold)}
+#menu{display:none;background:transparent;color:#fff;border:1px solid #8195ba;border-radius:9px;padding:9px 13px}
+.intro{background:radial-gradient(ellipse at 85% 10%,#1a488a,transparent 43%),linear-gradient(130deg,#061538,#0c2a5b);color:#fff;padding:72px 0 78px;position:relative;overflow:hidden}
+.intro:after{content:"";position:absolute;right:-70px;bottom:-140px;border:1px solid #ffffff25;width:420px;height:420px;border-radius:50%;pointer-events:none}
+.kicker{color:#ffda62;letter-spacing:.18em;font-size:.7rem;font-weight:800;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,5vw,4.7rem);line-height:1.12;letter-spacing:-.055em;margin:16px 0 18px;font-weight:850;max-width:800px}
+h1 em{font-style:normal;color:var(--gold)}.intro p{max-width:700px;color:#cbdaf1;margin:0;line-height:1.85}
+.breadcrumb{display:flex;gap:10px;align-items:center;color:#b7c9e5;font-size:.8rem;margin-bottom:27px;flex-wrap:wrap}.breadcrumb a{color:#fff;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
+main{min-height:50vh}.content{padding:55px 0 90px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:24px}.toolbar label{font-size:.9rem;font-weight:750}.search{width:min(100%,380px);padding:14px 17px;border:1px solid #cbd7e8;border-radius:11px;background:#fff;color:var(--ink)}.count{font-size:.84rem;color:var(--muted);font-weight:750}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.person{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 24px #09234d08}
+.person:hover{transform:translateY(-4px);box-shadow:0 16px 36px #09234d15}
+.person-visual{height:158px;background:radial-gradient(circle at 80% 10%,#e6eefb,transparent 50%),linear-gradient(130deg,#dce8f8,#edf3fb);display:grid;place-items:center;position:relative;overflow:hidden}
+.person-visual:before{content:"";position:absolute;width:145px;height:145px;border:1px solid #ffffffbb;border-radius:50%;right:-26px;top:-47px}
+.silhouette{width:70px;height:70px;border-radius:50%;background:#b4c7e2;position:relative;transform:translateY(24px)}
+.silhouette:after{content:"";position:absolute;width:132px;height:76px;left:50%;top:66px;transform:translateX(-50%);border-radius:75px 75px 0 0;background:#b4c7e2}
+.person-tag{position:absolute;left:18px;top:16px;background:#ffffffdf;color:#17437e;padding:5px 10px;border-radius:7px;font-size:.68rem;font-weight:850;letter-spacing:.06em}
+.person-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.person h2{font-size:1.05rem;line-height:1.45;margin:0 0 13px;min-height:3em;letter-spacing:-.01em}
+.pending{display:inline-flex;align-items:center;gap:7px;color:#6a7990;font-size:.78rem;margin-bottom:22px}
+.pending:before{content:"";width:7px;height:7px;border-radius:50%;background:#e3aa27}
+.person-link{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #e8edf5;padding-top:16px;text-decoration:none;font-size:.84rem;font-weight:850;color:#174c9b;margin-top:auto}
+.person-link:hover{color:#0a2a65}
+.empty{display:none;text-align:center;padding:35px;border:1px dashed #a9bbd5;background:#fff;border-radius:13px;color:var(--muted)}
+.info{margin-top:30px;padding:18px 22px;border-left:4px solid var(--gold);background:#fff8e4;border-radius:8px;color:#514b3c;font-size:.9rem}
+.detail-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:24px;align-items:start}
+.detail-card,.side-card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 12px 32px #0b2d5608}
+.detail-banner{min-height:245px;background:radial-gradient(circle at 75% 20%,#27539b,transparent 55%),linear-gradient(125deg,#07183c,#123a7a);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.detail-banner:before,.detail-banner:after{content:"";position:absolute;border:1px solid #ffffff2b;border-radius:50%;width:290px;height:290px;right:-40px;top:-100px}.detail-banner:after{width:210px;height:210px;right:0;top:-55px}
+.detail-avatar{width:100px;height:100px;border-radius:50%;background:#c5d4e8;position:relative;transform:translateY(34px);z-index:1}
+.detail-avatar:after{content:"";position:absolute;width:200px;height:105px;border-radius:110px 110px 0 0;background:#c5d4e8;top:94px;left:50%;transform:translateX(-50%)}
+.detail-body{padding:clamp(24px,4vw,40px)}.detail-label{font-size:.7rem;color:#a47b08;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+.detail-body h2{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.22;letter-spacing:-.04em;margin:14px 0 20px;overflow-wrap:anywhere}
+.detail-body p{color:#536581;line-height:1.85}.divider{border-top:1px solid #e4eaf3;margin:27px 0}
+.placeholder-heading{font-weight:850;color:#183864;margin-bottom:7px}.placeholder-text{font-size:.94rem}
+.side-card{padding:26px}.side-card h3{margin:0 0 15px;font-size:1rem}.fact{padding:15px 0;border-top:1px solid #e7edf5}.fact small{display:block;color:#697c96;font-size:.75rem;margin-bottom:4px}.fact strong{display:block;font-size:.9rem;font-weight:750}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.action{border:1px solid #cbd7e8;border-radius:9px;background:#fff;color:#143d80;padding:11px 15px;font-weight:750;font-size:.84rem;text-decoration:none}.action.primary{background:var(--gold);border-color:var(--gold);color:#061538}.action:hover{filter:brightness(.96)}.back{display:inline-flex;gap:8px;align-items:center;text-decoration:none;color:#16478f;font-weight:800;font-size:.9rem;margin-bottom:24px}
+footer{background:#06132f;color:#d7e5ff;padding:43px 0}.footer{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.footer p{color:#b5c5df;font-size:.8rem;max-width:620px}.footer a{color:#ffda66}.footer-logo{display:flex;align-items:center;gap:12px;font-weight:850}.footer-logo img{height:52px;width:52px}
+[hidden]{display:none!important}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-layout{grid-template-columns:1fr}}
+@media(max-width:760px){#menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:#07183c;padding:14px 22px 24px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 20px 28px #0003}nav.open{display:flex}nav a{padding:13px 8px;border-bottom:1px solid #ffffff15}.nav-cta{margin-top:10px;text-align:center;border:1px solid #ffce2888}.header{min-height:70px}.brand img{height:49px;width:49px}.brand span{font-size:.9rem}.brand small{font-size:.52rem}.intro{padding:50px 0 58px}.content{padding:35px 0 65px}}
+@media(max-width:540px){.notice{font-size:.56rem}.grid{grid-template-columns:1fr}.person-visual{height:165px}.person h2{min-height:0}.toolbar{align-items:stretch}.search{width:100%}.detail-banner{min-height:220px}.detail-body{padding:23px}.side-card{padding:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.person{transition:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Langkau ke kandungan</a>
+<div class="notice"><div class="wrap"><span>PORTAL MAKLUMAT MANDAT KELANTAN</span><a href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">Portal rasmi ePBMy ↗</a></div></div>
+<header><div class="wrap header"><a class="brand" href="index.html"><img src="mandat-logo-hd.svg?v=3" alt="Logo rasmi Parti MANDAT Belia"><span>MANDAT KELANTAN<small>PARTI MANDAT BELIA</small></span></a><button id="menu" aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi">☰ Menu</button><nav id="nav" aria-label="Navigasi utama"><a href="index.html">Utama</a><a href="calon.html" aria-current="page">Calon</a><a href="index.html#dasar">Bidang dasar</a><a href="index.html#program">Program</a><a href="index.html#faq">FAQ</a><a class="nav-cta" href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">ePBMy ↗</a></nav></div></header>
+<main id="main">
+<section class="intro"><div class="wrap"><div class="breadcrumb"><a href="index.html">Laman utama</a><span aria-hidden="true">/</span><span id="breadcrumbLast">Direktori calon</span></div><div class="kicker" id="introKicker">02 / Direktori calon</div><h1 id="introTitle">Kenali <em>14 calon</em><br>MANDAT Kelantan.</h1><p id="introDescription">Direktori calon berdasarkan senarai nama yang dikongsi pasukan. Gambar, biodata dan pengalaman akan ditambah hanya selepas disahkan.</p></div></section>
+<div class="wrap content">
+<div id="directory">
+<div class="toolbar"><div><label for="search">Cari calon mengikut nama</label><div class="count" id="count" role="status">14 profil disenaraikan</div></div><input class="search" id="search" type="search" placeholder="Contoh: Muhammad, Nurul..." autocomplete="off" aria-controls="candidateGrid"></div>
+<div id="candidateGrid" class="grid"></div>
+<p class="empty" id="empty" role="status">Tiada calon sepadan dengan carian anda.</p>
+<div class="info">Nama disenaraikan berdasarkan maklumat pencalonan yang dikongsi oleh pasukan. Susunan kad ialah susunan direktori, bukan nombor kertas undi atau keputusan pilihan raya. Sila rujuk ePBMy untuk pengesahan rasmi.</div>
+</div>
+<div id="detail" hidden><a class="back" href="calon.html">← Kembali ke direktori calon</a><div class="detail-layout"><article class="detail-card"><div class="detail-banner" aria-label="Ruang gambar calon belum tersedia"><div class="detail-avatar" aria-hidden="true"></div></div><div class="detail-body"><div class="detail-label" id="profileLabel">PROFIL CALON</div><h2 id="profileName"></h2><p>Nama calon yang disenaraikan dalam direktori MANDAT Kelantan.</p><div class="divider"></div><div class="placeholder-heading">Biodata & latar belakang</div><p class="placeholder-text">Maklumat biodata belum diterima atau disahkan untuk penerbitan. Bahagian ini akan dikemas kini apabila maklumat rasmi tersedia.</p><div class="divider"></div><div class="placeholder-heading">Foto rasmi calon</div><p class="placeholder-text">Foto belum disediakan. Paparan siluet ini ialah imej pemegang tempat, bukan gambar calon sebenar.</p><div class="controls"><button id="share" class="action primary" type="button">Salin pautan profil</button><a class="action" href="calon.html">Lihat semua calon</a></div><p id="shareStatus" role="status" style="font-size:.82rem;margin-top:12px"></p></div></article><aside class="side-card"><h3>Maklumat profil</h3><div class="fact"><small>Organisasi</small><strong>MANDAT Kelantan</strong></div><div class="fact"><small>Direktori</small><strong id="profileOrder"></strong></div><div class="fact"><small>Maklumat tambahan</small><strong>Menunggu pengesahan</strong></div><div class="fact"><small>Rujukan rasmi</small><a href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">Portal ePBMy ↗</a></div><div class="controls"><a id="previous" class="action" href="calon.html">← Sebelum</a><a id="next" class="action" href="calon.html">Seterusnya →</a></div></aside></div><div class="info">Halaman ini ialah profil pencalonan, bukan pengesahan kemenangan, jawatan atau keputusan pilihan raya.</div></div>
+</div>
+</main>
+<footer><div class="wrap footer"><div><div class="footer-logo"><img src="mandat-logo-hd.svg?v=3" alt="" loading="lazy"> MANDAT KELANTAN</div><p>Portal maklumat MANDAT Belia negeri Kelantan. Laman ini bukan laman rasmi Parlimen Malaysia. Maklumat pencalonan dan pengundian hendaklah disahkan melalui ePBMy.</p></div><div><a href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">Portal rasmi ePBMy ↗</a></div></div></footer>
+<script src="calon-data.js"></script>
+<script>
+(function(){
+'use strict';
+const candidates=window.MANDAT_CANDIDATES||[];
+const grid=document.getElementById('candidateGrid');
+const directory=document.getElementById('directory');
+const detail=document.getElementById('detail');
+const params=new URLSearchParams(location.search);
+const raw=params.get('id');
+const id=raw!==null&&/^\d{1,2}$/.test(raw)?Number(raw):null;
+const candidate=candidates.find(c=>c.id===id);
+function makeCard(c){
+const article=document.createElement('article');article.className='person';
+const visual=document.createElement('div');visual.className='person-visual';
+const silhouette=document.createElement('div');silhouette.className='silhouette';silhouette.setAttribute('aria-hidden','true');
+const tag=document.createElement('span');tag.className='person-tag';tag.textContent='PROFIL '+String(c.id).padStart(2,'0');
+visual.append(silhouette,tag);
+const body=document.createElement('div');body.className='person-body';
+const heading=document.createElement('h2');heading.textContent=c.name;
+const pending=document.createElement('span');pending.className='pending';pending.textContent='Biodata belum diterbitkan';
+const link=document.createElement('a');link.className='person-link';link.href='calon.html?id='+c.id;link.textContent='Lihat profil →';link.setAttribute('aria-label','Lihat profil '+c.name);
+body.append(heading,pending,link);article.append(visual,body);return article;
+}
+if(candidate){
+directory.hidden=true;detail.hidden=false;
+document.getElementById('breadcrumbLast').textContent='Profil '+String(candidate.id).padStart(2,'0');
+document.getElementById('introKicker').textContent='PROFIL / '+String(candidate.id).padStart(2,'0');
+const title=document.getElementById('introTitle');title.textContent='Profil calon'; 
+document.getElementById('introDescription').textContent='Maklumat nama calon yang disenaraikan dalam direktori MANDAT Kelantan.';
+document.getElementById('profileName').textContent=candidate.name;
+document.getElementById('profileLabel').textContent='PROFIL '+String(candidate.id).padStart(2,'0')+' / MANDAT KELANTAN';
+document.getElementById('profileOrder').textContent='Profil '+String(candidate.id).padStart(2,'0')+' daripada '+candidates.length;
+document.getElementById('previous').href='calon.html?id='+(candidate.id===1?candidates.length:candidate.id-1);
+document.getElementById('next').href='calon.html?id='+(candidate.id===candidates.length?1:candidate.id+1);
+document.title=candidate.name+' | Profil MANDAT Kelantan';
+document.querySelector('meta[name="description"]').content='Profil '+candidate.name+' dalam direktori MANDAT Kelantan. Biodata dan foto menunggu pengesahan.';
+document.getElementById('share').addEventListener('click',async()=>{
+const url=location.href;
+try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(url);document.getElementById('shareStatus').textContent='Pautan profil telah disalin.';}else{document.getElementById('shareStatus').textContent='Salin pautan daripada bar alamat pelayar: '+url;}}catch(e){document.getElementById('shareStatus').textContent='Salin pautan daripada bar alamat pelayar: '+url;}
+});
+}else{
+if(raw!==null){document.getElementById('introDescription').textContent='Profil tidak ditemui. Sila pilih calon daripada direktori di bawah.';}
+grid.replaceChildren(...candidates.map(makeCard));
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+const q=search.value.toLocaleLowerCase('ms').trim();let visible=0;
+Array.from(grid.children).forEach((el,i)=>{const ok=candidates[i].name.toLocaleLowerCase('ms').includes(q);el.hidden=!ok;if(ok)visible++;});
+document.getElementById('count').textContent=visible+' daripada '+candidates.length+' profil dipaparkan';
+document.getElementById('empty').style.display=visible?'none':'block';
+});
+}
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+function close(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Buka menu navigasi')}
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Tutup menu navigasi':'Buka menu navigasi')});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!menu.contains(e.target))close()});
+window.addEventListener('resize',()=>{if(innerWidth>760)close()});
+})();
+</script>
+</body>
+</html>
