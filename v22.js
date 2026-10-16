@@ -1,5 +1,5 @@
 /* MANDAT Kelantan V2.2: rendering only. No unverified editorial records. */
-(()=>{'use strict';
+(async()=>{'use strict';await (window.MANDAT_CMS_READY||Promise.resolve());
 const $=id=>document.getElementById(id);
 const isNews=location.pathname.split('/').pop()==='berita.html';
 const kind=isNews?'berita':'program';
