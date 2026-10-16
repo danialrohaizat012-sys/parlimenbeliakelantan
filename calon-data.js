@@ -18,7 +18,7 @@ window.MANDAT_CANDIDATES = Object.freeze([
   },
   {
     "id": 5,
-    "name": "WAN NURIZETI HAFISHA BINTI MOHAMMAD HAFIZ"
+    "name": "WAN NURZIETI HAFISHA BINTI MOHAMMAD HAFIZ"
   },
   {
     "id": 6,
