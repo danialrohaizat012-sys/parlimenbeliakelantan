@@ -63,17 +63,17 @@ footer{background:#06132f;color:#d7e5ff;padding:43px 0}.footer{display:flex;just
 @media(max-width:540px){.notice{font-size:.56rem}.grid{grid-template-columns:1fr}.person-visual{height:165px}.person h2{min-height:0}.toolbar{align-items:stretch}.search{width:100%}.detail-banner{min-height:220px}.detail-body{padding:23px}.side-card{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.person{transition:none}}
 </style>
-</head>
+<link rel="stylesheet" href="v23.css?v=23"></head>
 <body>
 <a href="#main" class="skip">Langkau ke kandungan</a>
 <div class="notice"><div class="wrap"><span>PORTAL MAKLUMAT MANDAT KELANTAN</span><a href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">Portal rasmi ePBMy ↗</a></div></div>
-<header><div class="wrap header"><a class="brand" href="index.html"><img src="mandat-logo-hd.svg?v=3" alt="Logo rasmi Parti MANDAT Belia"><span>MANDAT KELANTAN<small>PARTI MANDAT BELIA</small></span></a><button id="menu" aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi">☰ Menu</button><nav id="nav" aria-label="Navigasi utama"><a href="index.html">Utama</a><a href="calon.html" aria-current="page">Calon</a><a href="index.html#dasar">Bidang dasar</a><a href="index.html#program">Program</a><a href="index.html#faq">FAQ</a><a class="nav-cta" href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">ePBMy ↗</a></nav></div></header>
+<header><div class="wrap header"><a class="brand" href="index.html" aria-label="MANDAT Kelantan, halaman utama"><img src="mandat-logo-hd.svg?v=3" alt="Logo rasmi Parti MANDAT Belia"><span>MANDAT KELANTAN<small>PARTI MANDAT BELIA</small></span></a><button id="menu" aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi">☰ Menu</button><nav id="nav" aria-label="Navigasi utama"><a href="index.html">Utama</a><a href="calon.html" aria-current="page">Calon</a><a href="index.html#dasar">Bidang dasar</a><a href="index.html#program">Program</a><a href="index.html#faq">FAQ</a><a class="nav-cta" href="https://epbmy.parlimen.gov.my/" target="_blank" rel="noopener noreferrer">ePBMy ↗</a></nav></div></header>
 <main id="main">
 <section class="intro"><div class="wrap"><div class="breadcrumb"><a href="index.html">Laman utama</a><span aria-hidden="true">/</span><span id="breadcrumbLast">Direktori calon</span></div><div class="kicker" id="introKicker">02 / Direktori calon</div><h1 id="introTitle">Kenali <em>14 calon</em><br>MANDAT Kelantan.</h1><p id="introDescription">Direktori calon berdasarkan senarai nama yang dikongsi pasukan. Gambar, biodata dan pengalaman akan ditambah hanya selepas disahkan.</p></div></section>
 <div class="wrap content">
 <div id="directory">
 <div class="toolbar"><div><label for="search">Cari calon mengikut nama</label><div class="count" id="count" role="status">14 profil disenaraikan</div></div><input class="search" id="search" type="search" placeholder="Contoh: Muhammad, Nurul..." autocomplete="off" aria-controls="candidateGrid"></div>
-<div id="candidateGrid" class="grid"></div>
+<div id="candidateGrid" class="grid" aria-live="polite"></div>
 <p class="empty" id="empty" role="status">Tiada calon sepadan dengan carian anda.</p>
 <div class="info">Nama disenaraikan berdasarkan maklumat pencalonan yang dikongsi oleh pasukan. Susunan kad ialah susunan direktori, bukan nombor kertas undi atau keputusan pilihan raya. Sila rujuk ePBMy untuk pengesahan rasmi.</div>
 </div>
@@ -142,5 +142,5 @@ document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!menu.contains
 window.addEventListener('resize',()=>{if(innerWidth>760)close()});
 })();
 </script>
-</body>
+<script src="v23.js?v=23"></script></body>
 </html>
