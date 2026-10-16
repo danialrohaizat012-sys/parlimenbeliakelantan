@@ -6,7 +6,7 @@ if(detail){detail.hidden=true;const directory=document.getElementById('directory
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function refresh(){
 try{
-const rows=await window.MANDAT_CMS_READ('cms_candidates?select=id,name,bio,role_title,photo_path,is_published&is_published=eq.true&order=id.asc');
+const rows=await window.MANDAT_CMS_READ('cms_candidates?select=id,name,bio,role_title,photo_path,is_published,experience,expertise,social_instagram,social_facebook,social_tiktok&is_published=eq.true&order=id.asc');
 const photo=window.MANDAT_CMS_PHOTO;
 const page=location.pathname.split('/').pop();
 if(page==='index.html'||!page){
@@ -23,7 +23,7 @@ if(!c){if(detail)detail.hidden=true;if(dir){dir.hidden=false;dir.textContent='Pr
 if(detail)detail.hidden=false;if(dir)dir.hidden=true;
 const name=document.getElementById('profileName');if(name)name.textContent=c.name;
 document.title=c.name+' | MANDAT Kelantan';
-const bio=document.querySelector('.placeholder-text');if(bio)bio.textContent=c.bio||'Biodata belum diterbitkan';
+const fill=(sectionId,textId,value)=>{const section=document.getElementById(sectionId);const target=document.getElementById(textId);if(section)section.hidden=!String(value||'').trim();if(target)target.textContent=value||''};fill('profileBioSection','profileBio',c.bio);fill('profileExperienceSection','profileExperience',c.experience);fill('profileExpertiseSection','profileExpertise',c.expertise);fill('profileRoleFact','profileRole',c.role_title);const socials=document.getElementById('profileSocialLinks');const socialSection=document.getElementById('profileSocialSection');if(socials){socials.replaceChildren();for(const [label,url] of [['Instagram',c.social_instagram],['Facebook',c.social_facebook],['TikTok',c.social_tiktok]]){try{const u=new URL(url);if(u.protocol!=='https:'&&u.protocol!=='http:')continue;const a=document.createElement('a');a.className='action';a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';socials.append(a)}catch(e){}}if(socialSection)socialSection.hidden=!socials.children.length}
 const banner=document.querySelector('.detail-banner');if(banner&&c.photo_path){banner.replaceChildren();banner.classList.add('cms-detail-photo');const img=document.createElement('img');img.src=photo(c.photo_path);img.alt='Foto '+c.name;banner.append(img)}
 }else{
 if(dir)dir.hidden=false;if(detail)detail.hidden=true;
