@@ -1,1 +1,17 @@
 .cms-photo{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}.candidate-avatar .cms-photo{border-radius:inherit}.person-visual:has(.cms-photo){background:#dce8f8}.person-visual .cms-photo{position:absolute;inset:0}.person-visual .person-tag{z-index:2}.cms-detail-photo{display:flex;justify-content:center;align-items:center;overflow:hidden;background:#e8eff9}.cms-detail-photo img{width:100%;height:100%;max-height:340px;object-fit:contain;object-position:center}
+/* Candidate editorial cards V3 */
+#calon #candidateGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+#calon #candidateGrid .candidate-v21{display:flex;flex-direction:column;gap:0;padding:0;min-width:0;overflow:hidden;border:1px solid #e2e8f2;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(8,30,69,.06);transition:transform .2s ease,box-shadow .2s ease}
+#calon #candidateGrid .candidate-v21:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(8,30,69,.13)}
+#calon #candidateGrid .candidate-avatar{width:100%;height:auto;aspect-ratio:4/5;border-radius:0;background:linear-gradient(145deg,#dfe8f5,#f1f5fb);position:relative;overflow:hidden}
+#calon #candidateGrid .candidate-avatar .cms-photo{width:100%;height:100%;object-fit:cover;object-position:center 18%;border-radius:0;transition:transform .35s ease}
+#calon #candidateGrid .candidate-v21:hover .cms-photo{transform:scale(1.035)}
+#calon #candidateGrid .candidate-info{padding:22px 22px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;flex:1;width:100%}
+#calon #candidateGrid .candidate-index{font-size:.69rem;font-weight:800;letter-spacing:.13em;color:#a77c17}
+#calon #candidateGrid .candidate-info h3{font-size:clamp(.98rem,1.3vw,1.18rem);font-weight:850;line-height:1.45;letter-spacing:-.015em;color:#0b234d;margin:0;overflow-wrap:anywhere}
+#calon #candidateGrid .candidate-pending{color:#64748b;font-size:.84rem;line-height:1.5}
+#calon #candidateGrid .candidate-link{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid #cad5e5;border-radius:10px;color:#0b2a60;text-decoration:none;font-size:.83rem;font-weight:750;background:#f8fafd;transition:background .2s,border-color .2s}
+#calon #candidateGrid .candidate-link:hover{background:#e9f1ff;border-color:#8da9d0}
+@media(max-width:850px){#calon #candidateGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:540px){#calon #candidateGrid{grid-template-columns:1fr;gap:20px;max-width:420px;margin-inline:auto}#calon #candidateGrid .candidate-info{padding:20px}#calon #candidateGrid .candidate-info h3{font-size:1.07rem}}
+@media(prefers-reduced-motion:reduce){#calon #candidateGrid .candidate-v21,#calon #candidateGrid .cms-photo{transition:none}}
